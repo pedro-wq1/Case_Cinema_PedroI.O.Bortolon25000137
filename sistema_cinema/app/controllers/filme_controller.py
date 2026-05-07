@@ -4,7 +4,6 @@ from app.services.filme_service import FilmeService
 class FilmeController:
     """Coordena o fluxo de dados entre a View e o Service."""
     def __init__(self):
-        # Injeta as dependências
         self.repo = FilmeRepository()
         self.service = FilmeService(self.repo)
 
